@@ -7,20 +7,183 @@
 	<link rel="icon" type="image/x-icon" href="Image/eart.png">
 	
 	<meta charset="UTF-8"> 
-	<meta name="description" content="Landing Page">
-	<meta name="author" content="Chin Yi Fan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<style>
+
+	.ima{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-item: center;
+		width:100%;
+		height:400px;
+	}
 	
+	ul {
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 20px 35px;
+		text-decoration: none;
+		font-size:18px;
+	}
+
+	li a:hover:not(.active) {
+		background-color: #111;
+	}
+
+	.active {
+		background-color: #787878;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.centered {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	details {
+		user-select: none;
+		color:white;
+		background-color: #b8b6b6;
+	}
 	
-	
+	details>summary span.icon {
+		width: 24px;
+		height: 24px;
+		transition: all 0.4s;
+		margin-left: 0px;
+		margin-right: 52%;
+		padding: 8px 0px;
+		color:white;
+	}
+
+	details[open] summary span.icon {
+		transform: rotate(180deg);
+	}
+
+	summary {
+		display: flex;
+		cursor: pointer;
+		background-color: #787878;
+	}
+
+	summary::-webkit-details-marker {
+		display: none;
+	}
+
+	#mymain {
+		height: 30px;
+		display: flex;
+	}
+
+	#mymain div {
+		width:100%;
+		text-align:center;
+		font-size: 20px;
+	}
+
+	.container-for-button { 
+		height: 220px;
+		position: relative; 
+	}
+
+	.button{
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		padding: 20px 60px;
+		border-radius: 10px;
+		font-size: 30px;
+		background-color:white;
+		font-family:arial;
+		outline:none;
+		border:none;
+		cursor: pointer;
+		transition-duration: 0.4s;
+	}
+
+	.button:hover{
+		background-color:#c5c6c7;
+	}
+
 	</style>
 	
 </head>
 
 <body bgcolor="black" style="margin:0px">
 
-	<img src="Image/earth.jpg" alt="Earth" style="width:100%;height:400px">
+	<!-- Navigational Bar -->
+	<ul>
+		<li><img src="Image/icon.png" style="height:50px; padding:6px 20px 0px;"></li>
+		<li><a class="active" href="Landing Page.html">Home</a></li>
+		<li><a href="Landing Page.html">Home</a></li>
+		<li><a href="Landing Page.html">Home</a></li>
+	</ul>
+
+	<!-- Title and Image -->
+	<div class="container">
+
+		<img src="Image/earth.jpg" alt="Earth" class="ima">
+
+		<div class="centered">
+			hi
+		</div>
+	</div>
+
+	<!-- Button to map -->
+	<div class="container-for-button">
+
+		<button class="button" onclick="alert('Hello world!')">
+			To The Map!
+		</button>
+	</div>
+
+	<!-- Credit -->
+	<details>
+		<summary>
+			<div style="margin-left:48%; margin-right:10px; padding:10px 0px; font-size:18px;">
+				Credits
+			</div>
+			<span class="icon"> &darr;</span>
+		</summary>
+
+		<p style="padding: 0px 10px 0px 10px; line-height: 1.5; text-align:center; margin: 0px 0px; font-size:22px;">
+			Group Assignnent
+		</p>
+
+		<div id="mymain">
+
+			<div>Chin Yi Fan 28</div>
+			<div>Kong Yen Wen 30</div>
+			<div>Law You Wei 31</div>
+			<div>Ng Chun An 36</div>
+		</div>
+	</details>
+
 
 </body>
 </html>
