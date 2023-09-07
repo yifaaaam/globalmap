@@ -15,9 +15,8 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		align-item: center;
 		width:100%;
-		height:400px;
+		height:500px;
 	}
 	
 	ul {
@@ -60,13 +59,14 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		font-size: 200px;
 	}
 
-	details {
-		user-select: none;
-		color:white;
-		background-color: #b8b6b6;
-	}
+    details {
+        user-select: none;
+        color: white;
+        background-color: #3d3d3d;
+    }
 	
 	details>summary span.icon {
 		width: 24px;
@@ -88,10 +88,6 @@
 		background-color: #787878;
 	}
 
-	summary::-webkit-details-marker {
-		display: none;
-	}
-
 	#mymain {
 		height: 30px;
 		display: flex;
@@ -104,30 +100,36 @@
 	}
 
 	.container-for-button { 
-		height: 220px;
+		height: 250px;
 		position: relative; 
 	}
 
-	.button{
-		margin: 0;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		padding: 20px 60px;
-		border-radius: 10px;
-		font-size: 30px;
-		background-color:white;
-		font-family:arial;
-		outline:none;
-		border:none;
-		cursor: pointer;
-		transition-duration: 0.4s;
-	}
+        .button {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            padding: 20px 60px;
+            border-radius: 10px;
+            font-size: 30px;
+            background-color: white;
+            font-family: arial;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
 
 	.button:hover{
 		background-color:#c5c6c7;
+	}
+
+	.copyright{
+		text-align:center;
+		font-size: 15px;
+		width:100%;
 	}
 
 	</style>
@@ -150,14 +152,14 @@
 		<img src="Image/earth.jpg" alt="Earth" class="ima">
 
 		<div class="centered">
-			hi
+			GLOBAL MAP
 		</div>
 	</div>
 
 	<!-- Button to map -->
 	<div class="container-for-button">
 
-		<button class="button" onclick="alert('Hello world!')">
+		<button class="button" onclick="alert('In developing , hold your horses')">
 			To The Map!
 		</button>
 	</div>
@@ -182,8 +184,14 @@
 			<div>Law You Wei 31</div>
 			<div>Ng Chun An 36</div>
 		</div>
+
+		<div class="copyright">
+			@Copyright own by: Me,I guess (•̀ᴗ• )
+		</div>
 	</details>
 
 
 </body>
+</html>
+
 </html>
