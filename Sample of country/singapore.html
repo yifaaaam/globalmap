@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Map</title>
+    <link rel="icon" type="image/x-icon" href="/Image/eart.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+</head>
+<style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    /*整个框架*/
+    .shell{
+      height: 100vh;
+      overflow-x: hidden;
+      perspective: 3px;
+    }
+    /*图片*/
+    .image{
+      position:relative;
+      transform: translateZ(-10px) scale(5);
+      background-size: cover;
+      height: 100vh;
+      z-index: -1;
+    }
+    /*国家名字那一栏*/
+    .heading{
+      z-index: 0;
+      transform:translateZ(-5px) scale(2.5);
+      position:absolute;
+      width: 100%;
+      display: flex;
+    }
+    .heading_text{
+      letter-spacing: 3px;
+      color: #fff;
+      font-size: 50px;
+      background-color: #242424b2;
+      border-left: 20px solid #eea609;
+    }
+    .scrollicon_bar{
+      bottom: 0%;
+      z-index: 0;
+      position:absolute;
+      width: 100%;
+      /*加这两个再删掉float就可以把它变去中间了*/
+      /*display: flex;*/
+    }
+    .scrollicon{
+      /*margin: 0 auto;*/
+      float: right;
+      width: auto;
+      height: 200px;
+    }
+    /*往下滑出现的东西*/
+    .main{
+      position:relative;
+      background-color: #202124;
+      padding: 30px 15%;
+    }
+    @media screen and (max-width: 1400px){
+      .main{
+      position:relative;
+      background-color: #202124;
+      padding: 5vh 0vw;
+      }
+    }
+    /*大标题*/
+    .title{
+      font-size: 100px;
+      background-color: #35363a;
+      color: #ffffff;
+      border-bottom: 10px solid #eea609;
+    }
+    /*标题 & 内容*/
+    .text{
+      background-color: #4e4e4e;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    } 
+    /*标题用tag h1*/
+    .text h1{
+      color: #fdfdfd;
+      font-size: 60px;
+      margin-inline:50px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    /*副标题用tag b*/
+    .text h2{
+      color: #fff1a4;
+      font-size: 30px;
+      margin-left: 80px;
+      margin-top: 20px;
+    }
+    /*内容用tag p*/
+    .text p{
+      color: #dadada;
+      margin: 0px 80px;
+      font-size: 20px;
+    }
+</style>
+
+<body>
+  <div class="shell">
+
+    <div class="image" style="background-image: url('img_singapore.jpg');"></div>
+    <div class="heading">
+      <div class="heading_text">
+        <h1>Singapore</h1>
+        <p>A sunny, tropical island</p>
+      </div>
+    </div>
+    <div class="scrollicon_bar">
+      <img class="scrollicon" src="scroll down icon.gif">
+    </div>
+
+    <div class="main">
+      <div class="title">
+        <h1>Introduce</h1>
+      </div>
+      <div>
+        <!--有时间再做一个导航栏-->
+      </div>
+      <div class="text">
+        <h1>Get to know quickly</h1>
+        <p>Singapore, officially the Republic of Singapore, is an island country and city-state in maritime Southeast Asia. It is located about one degree of latitude (137 kilometres or 85 miles) 
+        north of the equator, off the southern tip of the Malay Peninsula, bordering the Strait of Malacca to the west, the Singapore Strait to the south, the South China Sea to the east, and the 
+        Straits of Johor to the north. The country's territory comprises one main island, 63 satellite islands and islets, and one outlying islet; the combined area of these has increased by 25% 
+        since the country's independence as a result of extensive land reclamation projects. It has the second highest population density of any country in the world, although there are numerous 
+        green and recreational spaces as a result of urban planning. With a multicultural population and in recognition of the cultural identities of the major ethnic groups within the nation, 
+        Singapore has four official languages is English, Malay, Mandarin, and Tamil. English is the lingua franca, with its exclusive use in numerous public services. Multi-racialism is enshrined 
+        in the constitution and continues to shape national policies in education, housing, and politics.</p>
+        <h1>Detail</h1>
+        <h2>Geography</h2>
+        <p>Singapore is situated at the southern tip of the Malay Peninsula, separated from Malaysia by the Johor Strait. The country is made up of the main island, Singapore Island, and numerous smaller islands. </p>
+        <h2>Size</h2>
+        <p> Singapore is one of the world's smallest countries in terms of land area, covering approximately 728 square kilometers (281 square miles).</p>
+        <h2>Population</h2>
+        <p>As of my last knowledge update in September 2021, Singapore had a population of around 5.7 million people. However, population figures may have changed since then.</p>
+        <h2>Government</h2>
+        <p>Singapore is a parliamentary republic with a system of government based on a parliamentary democracy. The President is the head of state, while the Prime Minister is the head of government. The country has a strong and stable political system.</p>
+        <h2>Economy</h2>
+        <p>Singapore has a highly developed and diverse economy. It is known for its financial services, trade, and manufacturing sectors. The country is a major global financial hub and is home to the Singapore Exchange (SGX). It also has one of the busiest ports in the world.</p>
+        <h2>Language</h2>
+        <p>The official languages of Singapore are English, Malay, Mandarin Chinese, and Tamil. English is the most widely used language for business and government.</p>
+        <h2>Culture</h2>
+        <p>Singapore is a multicultural society with a rich tapestry of traditions and ethnicities. The major ethnic groups in Singapore include Chinese, Malays, Indians, and Eurasians. This cultural diversity is reflected in the country's festivals, cuisine, and traditions.</p>
+        <h2>Education</h2>
+        <p>Singapore is known for its high-quality education system and has consistently ranked highly in international education assessments. The country places a strong emphasis on science, technology, engineering, and mathematics (STEM) education.</p>
+        <h2>Tourism</h2>
+        <p>Singapore is a popular tourist destination, known for its iconic landmarks such as the Marina Bay Sands resort, the Gardens by the Bay, and the Merlion statue. Visitors also come for its shopping districts, culinary scene, and vibrant nightlife.</p>
+        <h2>Cleanliness and Safety</h2>
+        <p>Singapore is renowned for its cleanliness and strict laws, including rules against littering and chewing gum. It is considered one of the safest cities in the world with low crime rates.</p>
+        <h2>Transportation</h2>
+        <p>The country has an efficient and extensive public transportation system, including buses and a well-connected subway system known as the Mass Rapid Transit (MRT). Singapore Changi Airport is one of the world's busiest and best-rated airports.</p>
+        <h2>Green Initiatives</h2>
+        <p>Singapore places a strong emphasis on environmental sustainability and green initiatives. Efforts are made to create green spaces, reduce pollution, and promote eco-friendly practices.</p>
+      </div>
+    </div>
+    
+  </div> 
+
+</body>
+
+</html>
