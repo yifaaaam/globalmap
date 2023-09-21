@@ -12,13 +12,13 @@
       padding: 0;
       margin: 0;
     }
-    /*整个框架*/
+    /*�������*/
     .shell{
       height: 100vh;
       overflow-x: hidden;
       perspective: 3px;
     }
-    /*图片*/
+    /*ͼƬ*/
     .image{
       position:relative;
       transform: translateZ(-10px) scale(5);
@@ -26,7 +26,7 @@
       height: 100vh;
       z-index: -1;
     }
-    /*国家名字那一栏*/
+    /*����������һ��*/
     .heading{
       z-index: 0;
       transform:translateZ(-5px) scale(2.5);
@@ -46,7 +46,7 @@
       z-index: 0;
       position:absolute;
       width: 100%;
-      /*加这两个再删掉float就可以把它变去中间了*/
+      /*����������ɾ��float�Ϳ��԰�����ȥ�м���*/
       /*display: flex;*/
     }
     .scrollicon{
@@ -55,7 +55,7 @@
       width: auto;
       height: 200px;
     }
-    /*往下滑出现的东西*/
+    /*���»����ֵĶ���*/
     .main{
       position:relative;
       background-color: #202124;
@@ -68,20 +68,20 @@
       padding: 5vh 0vw;
       }
     }
-    /*大标题*/
+    /*�����*/
     .title{
       font-size: 100px;
       background-color: #35363a;
       color: #ffffff;
       border-bottom: 10px solid #eea609;
     }
-    /*标题 & 内容*/
+    /*���� & ����*/
     .text{
       background-color: #4e4e4e;
       padding-top: 20px;
       padding-bottom: 40px;
     } 
-    /*标题用tag h1*/
+    /*������tag h1*/
     .text h1{
       color: #fdfdfd;
       font-size: 60px;
@@ -89,14 +89,14 @@
       margin-top: 50px;
       margin-bottom: 20px;
     }
-    /*副标题用tag b*/
+    /*��������tag b*/
     .text h2{
       color: #fff1a4;
       font-size: 30px;
       margin-left: 80px;
       margin-top: 20px;
     }
-    /*内容用tag p*/
+    /*������tag p*/
     .text p{
       color: #dadada;
       margin: 0px 80px;
@@ -107,11 +107,11 @@
 <body>
   <div class="shell">
 
-    <div class="image" style="background-image: url('img_singapore.jpg');"></div>
+    <div class="image" style="background-image: url('msia.jpg');"></div>
     <div class="heading">
       <div class="heading_text">
         <h1>Malaysia</h1>
-        <p>A sunny, tropical island</p>
+        <p>The Land of Colours</p>
       </div>
     </div>
     <div class="scrollicon_bar">
@@ -120,45 +120,42 @@
 
     <div class="main">
       <div class="title">
-        <h1>Introduce</h1>
+        <h1>Introduction</h1>
       </div>
       <div>
-        <!--有时间再做一个导航栏-->
+        <!--��ʱ������һ��������-->
       </div>
       <div class="text">
-        <h1>Get to know quickly</h1>
-        <p>Singapore, officially the Republic of Singapore, is an island country and city-state in maritime Southeast Asia. It is located about one degree of latitude (137 kilometres or 85 miles) 
-        north of the equator, off the southern tip of the Malay Peninsula, bordering the Strait of Malacca to the west, the Singapore Strait to the south, the South China Sea to the east, and the 
-        Straits of Johor to the north. The country's territory comprises one main island, 63 satellite islands and islets, and one outlying islet; the combined area of these has increased by 25% 
-        since the country's independence as a result of extensive land reclamation projects. It has the second highest population density of any country in the world, although there are numerous 
-        green and recreational spaces as a result of urban planning. With a multicultural population and in recognition of the cultural identities of the major ethnic groups within the nation, 
-        Singapore has four official languages is English, Malay, Mandarin, and Tamil. English is the lingua franca, with its exclusive use in numerous public services. Multi-racialism is enshrined 
-        in the constitution and continues to shape national policies in education, housing, and politics.</p>
-        <h1>Detail</h1>
-        <h2>Geography</h2>
-        <p>Singapore is situated at the southern tip of the Malay Peninsula, separated from Malaysia by the Johor Strait. The country is made up of the main island, Singapore Island, and numerous smaller islands. </p>
-        <h2>Size</h2>
-        <p> Singapore is one of the world's smallest countries in terms of land area, covering approximately 728 square kilometers (281 square miles).</p>
-        <h2>Population</h2>
-        <p>As of my last knowledge update in September 2021, Singapore had a population of around 5.7 million people. However, population figures may have changed since then.</p>
-        <h2>Government</h2>
-        <p>Singapore is a parliamentary republic with a system of government based on a parliamentary democracy. The President is the head of state, while the Prime Minister is the head of government. The country has a strong and stable political system.</p>
-        <h2>Economy</h2>
-        <p>Singapore has a highly developed and diverse economy. It is known for its financial services, trade, and manufacturing sectors. The country is a major global financial hub and is home to the Singapore Exchange (SGX). It also has one of the busiest ports in the world.</p>
-        <h2>Language</h2>
-        <p>The official languages of Singapore are English, Malay, Mandarin Chinese, and Tamil. English is the most widely used language for business and government.</p>
-        <h2>Culture</h2>
-        <p>Singapore is a multicultural society with a rich tapestry of traditions and ethnicities. The major ethnic groups in Singapore include Chinese, Malays, Indians, and Eurasians. This cultural diversity is reflected in the country's festivals, cuisine, and traditions.</p>
-        <h2>Education</h2>
-        <p>Singapore is known for its high-quality education system and has consistently ranked highly in international education assessments. The country places a strong emphasis on science, technology, engineering, and mathematics (STEM) education.</p>
-        <h2>Tourism</h2>
-        <p>Singapore is a popular tourist destination, known for its iconic landmarks such as the Marina Bay Sands resort, the Gardens by the Bay, and the Merlion statue. Visitors also come for its shopping districts, culinary scene, and vibrant nightlife.</p>
-        <h2>Cleanliness and Safety</h2>
-        <p>Singapore is renowned for its cleanliness and strict laws, including rules against littering and chewing gum. It is considered one of the safest cities in the world with low crime rates.</p>
-        <h2>Transportation</h2>
-        <p>The country has an efficient and extensive public transportation system, including buses and a well-connected subway system known as the Mass Rapid Transit (MRT). Singapore Changi Airport is one of the world's busiest and best-rated airports.</p>
-        <h2>Green Initiatives</h2>
-        <p>Singapore places a strong emphasis on environmental sustainability and green initiatives. Efforts are made to create green spaces, reduce pollution, and promote eco-friendly practices.</p>
+          <h1>Get to know quickly</h1>
+          <p>Malaysia is a country in Southeast Asia, on the Malay Peninsula, as well as on northern Borneo. The country is one of Asia's tiger economies, having seen great economic and human development during the last several decades. While the capital Kuala Lumpur is a cosmopolitan city, deep jungles cover vast swaths of the land.</p>
+          <h2>Geography</h2>
+          <p>
+              Malaysia comprises two geographic regions, Peninsular Malaysia and East Malaysia, which are separated by the South China Sea.
+              Peninsular Malaysia (Semenanjung Malaysia) occupies all of the Malay Peninsula between Thailand and Singapore, and is also known as West Malaysia (Malaysia Barat) or the slightly archaic Malaya (Tanah Melayu). It's home to the bulk of Malaysia's population, the capital and the largest city Kuala Lumpur, and generally more economically developed. Peninsular Malaysia consists of plains on both the East and West Coasts, separated from each other by a mountain range known as the Banjaran Titiwangsa, with the West Coast being more densely populated and generally more well-developed than the East Coast.
+              Separated some 800 km to the east of Peninsular Malaysia is East Malaysia (Malaysia Timur). East Malaysia occupies the northern third of the island of Borneo, shared with Indonesia and tiny Brunei. Much of the development on East Malaysia is centred around the cities of Kuching, Miri and Kota Kinabalu. Outside of the major cities and smaller towns are impenetrable jungle where head hunters once roamed and coastal plains rising to mountains. East Malaysia is rich in natural resources and is very much Malaysia's hinterland for industry and tourism, though those who make the trip will find it to be a world-class ecotourism destination.
+          </p>
+          <h2>Climate</h2>
+          <p>
+              The climate in Malaysia is equatorial. The north-east monsoon (October to February) deluges Borneo and the East Coast of the Peninsula in rain and often causes flooding, while the West Coast (particularly Langkawi and Penang) escapes unscathed. The milder south-west monsoon (April to October) reverses the pattern. The southern and central parts of Peninsular Malaysia, including perennially soggy Kuala Lumpur, are exposed to both but even during the rainy season, the showers tend to be intense but brief.
+              Malaysia is close to the equator, so warm weather is guaranteed. Temperatures generally range from 32°C (90°F) at noon to about 26°C (79°F) at midnight. But like most Southeast Asian countries, Malaysia's sun-shining days are interrupted by monsoon season every year, and night temperatures can hit a low of about 23°C (73°F) on rainy days.
+              Temperatures tend to be cooler in the highlands, with the likes of Genting Highlands, Cameron Highlands and Fraser's Hill having temperatures ranging from about 17°C (63°F) at night to about 25°C (77°F) in the day. Mount Kinabalu is known to have temperatures falling below 10°C (50°F).
+          </p>
+          <h2>People</h2>
+          <p>Malaysia is a multicultural society. While Malays (a branch of the Austronesian group) make up a 52% majority, 27% of Malaysians are Chinese (who are especially visible in the cities), 9% are Indians, 12% are members of aboriginal peoples (often called Orang Asli, Malay for "Original People"), and there is a miscellaneous grouping of 1.5% "others", including Thai communities in northern border states and the Portuguese clan in Malacca. The majority of the population (including virtually all Malays, as well as a significant minority of Indians) adhere to Islam, the official religion, and there are substantial minorities who practice Christianity, Buddhism, Taoism, Hinduism, Sikhism and Animism, which is allowed under constitution subject to the supremacy of Islam for example, it is illegal to proselytize other religions to Muslims.</p>
+          <h2>Culture</h2>
+          <p>
+              Malaysia shares many cultural similarities with its neighbours, Brunei, Indonesia and Singapore due to their common history. As the first great kingdoms to emerge in the region were Hindu kingdoms with much influence from India, Malay culture has substantial Indian influences. This is most visible in Malay cuisine with its relatively heavy use of curries, albeit using local instead of Indian spices, meaning that Malay curries often have a unique local flavour that is different from their Indian counterparts. Malaysia's minorities also continue to maintain their own distinct cultures, with the Chinese and Indian communities continuing to preserve the traditions brought from their ancestral homelands. In particular, Malaysia's ethnic Chinese community is considered to have preserved Chinese culture and language the best among all the overseas Chinese communities of the world. Moreover, as Malaysia was unaffected by the Cultural Revolution, the ethnic Chinese community of Malaysia has preserved many elements of traditional Chinese culture that have been lost in mainland China.
+          </p>
+          <h1>Cities</h1>
+          <ul><h2>Kuala Lumpur</h2><p>The multi-cultural national capital, home of the Petronas Twin Towers</p></ul>
+          <ul><h2>Georgetown</h2><p>The capital of Penang and Malaysia's second largest city, famed for its colonial-era architecture, multi-cultural populace, food and arts scene</p></ul>
+          <ul><h2>Malacca</h2><p>The historical city of Malaysia with colonial-style architecture</p></ul>
+          <ul><h2>Ipoh</h2><p>The capital of Perak, with a historic colonial old town and tin mining area</p></ul>
+          <ul><h2>Johor Bahru</h2><p>Capital of Johor and Malaysia's third largest city, gate to the neighbouring Singapore</p></ul>
+          <ul><h2>Kuantan</h2><p>Capital of Pahang and commercial centre of the East Coast</p></ul>
+          <ul><h2>Kota Kinabalu</h2><p>Capital of Sabah, close to tropical islands, lush rain forest and Mount Kinabalu</p></ul>
+          <ul><h2>Kuching</h2><p>Capital of Sarawak, and largest city in East Malaysia</p></ul>
+          <ul><h2>Miri</h2><p>Resort city of Sarawak located near the border of Brunei and gateway to UNESCO World Heritage Site, Gunung Mulu National Park</p></ul>
       </div>
     </div>
     
