@@ -9,20 +9,19 @@ a{
   text-decoration: none;
 }
 nav{
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background: #eea50944;
-  padding: 20px;
   z-index: 3;
-  transition: 0.2s ease;
+  width: 120%;
+  background: #eea509;
+  padding: 20px;
+  position: absolute;
+  transform-origin: top center ;
+  transform:translateZ(-3000px) scale(1000) translateY(-50vh);
 }
 nav.sticky{
-  background: #ffa600d2;
+  background: #4e4e4e;
 }
 nav .nav_content{
-  height: 40%;
+  height: 100%;
   max-width: 1440px;
   margin: auto;
   display: flex;
@@ -47,63 +46,67 @@ nav .nav_links a{
   font-weight: 500;
   color: #ffffff;
   padding: 10px 15px;
-  transition: all 0.3s ease-out;
-  border-radius: 20px;
-  display: flex;
-  margin: auto;
+  transition: all 0.3s ease;
 }
 nav .nav_links a:hover{
-  color: #ffc400;
-  background: #35363a;
-  border-radius: 10px;
-  font-size: 20px;
-} 
-nav .nav_links a:active{
-  transition:0.1s ease;
-  color: #ffffff;
-  font-size: 10px;
-} 
+  color: #ffd900;
+}
 
 
+/*整个框架*/
+.shell{
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 3px;
+}
+/*图片*/
+.image{
+  position:relative;
+  transform: translateZ(-10px) scale(5);
+  background-size: cover;
+  height: 100vh;
+  z-index: -1;
+}
+/*国家名字那一栏*/
+.heading{
+  z-index: 0;
+  transform:translateZ(-5px) scale(2.5);
+  position:absolute;
+  width: 100%;
+  display: flex;
+}
+.heading_text{
+  letter-spacing: 3px;
+  color: #fff;
+  font-size: 50px;
+  background-color: #242424b2;
+  border-left: 20px solid #eea609;
+}
+.scrollicon_bar{
+  bottom: 0%;
+  z-index: 0;
+  position:absolute;
+  width: 100%;
+  /*加这两个再删掉float就可以把它变去中间了*/
+  /*display: flex;*/
+}
+.scrollicon{
+  /*margin: 0 auto;*/
+  float: right;
+  width: auto;
+  height: 200px;
+}
 /*往下滑出现的东西*/
 .main{
+  position:relative;
   background-color: #202124;
   padding: 30px 15%;
 }
-/*大标题*/
-.title{
-  font-size: 100px;
-  background-color: #35363a;
-  color: #ffffff;
-  border-bottom: 10px solid #eea609;
-}
-/*标题 & 内容*/
-.text{
-  background-color: #4e4e4e;
-  padding-top: 20px;
-  padding-bottom: 40px;
-} 
-/*标题用tag h1*/
-.text h1{
-  position: sticky;
-  top: 80px;
-  background: #4e4e4e;
-  color: #fdfdfd;
-  font-size: 60px;
-  margin-inline:50px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-/*副标题用tag b*/
-.text h2{
-  color: #fff1a4;
-  font-size: 30px;
-  margin-left: 80px;
-  margin-top: 20px;
-}
-/*内容用tag p*/
-.text p{
-  color: #dadada;
-  margin: 0px 80px;
-  font-size: 20px;
+@media screen and (max-width: 1400px){
+  .main{
+  position:relative;
+  background-color: #202124;
+  padding: 5vh 0vw;
+  }
 }
