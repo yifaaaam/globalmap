@@ -22,7 +22,7 @@ nav.sticky{
   background: #ffa600d2;
 }
 nav .nav_content{
-  height: 100%;
+  height: 40%;
   max-width: 1440px;
   margin: auto;
   display: flex;
