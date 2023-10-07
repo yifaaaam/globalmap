@@ -28,7 +28,7 @@ nav .nav_content{
   justify-content: space-between;
   align-items: center;
 }
-nav .nav_content .logo a{
+nav .nav_content .logo{
   font-size: 35px;
   font-weight: 500;
   color: #ffffff;
