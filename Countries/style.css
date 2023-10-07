@@ -57,7 +57,6 @@ nav .nav_links a:hover{
 .shell{
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
   perspective: 3px;
 }
 /*图片*/
