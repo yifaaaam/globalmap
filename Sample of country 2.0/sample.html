@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Map</title>
-    <link rel="icon" type="image/x-icon" href="/Image/eart.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-</head>
+<title>Map</title>
+<link rel="icon" type="image/x-icon" href="/Image/eart.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-  
-  <div class="shell">
-  
-    <div class="image" style="background-image: url('img_singapore.jpg');"></div>
+<div id="shell">
 
-    <div class="heading">
-      <div class="heading_text">
-        <h1>Singapore</h1>
-        <p>A sunny, tropical island</p>
-      </div>
+  <!-- Header -->
+  <div class="image" style="background-image: url('img_singapore.jpg');"></div>
+  <div class="heading">
+    <div class="heading_text">
+      <h1>Singapore</h1>
+      <p>A sunny, tropical island</p>
     </div>
-    <div class="scrollicon_bar">
-      <img class="scrollicon" src="scroll down icon.gif">
-    </div>
+  </div>
+  <div class="scrollicon_bar">
+    <img class="scrollicon" src="scroll down icon.gif">
+  </div>
 
-
+  <!-- Article -->
+  <div class="mainBackground">
     <div class="main">
       <div class="title">
         <h1>Introduce</h1>
-      </div>
-      <div>
-        <!--有时间再做一个导航栏-->
       </div>
       <div class="text">
         <h1>Get to know quickly</h1>
@@ -69,6 +65,52 @@
         <p>Singapore places a strong emphasis on environmental sustainability and green initiatives. Efforts are made to create green spaces, reduce pollution, and promote eco-friendly practices.</p>
       </div>
     </div>
-</body>
+  </div>
 
+	<!-- Credit -->
+	<details>
+		<summary>
+			<div style="font-size:18px; margin-left:8px ; ">
+				Credits
+			</div>
+			<span class="icon"> &darr;</span>
+		</summary>
+
+		<p style="padding: 0px 10px 0px 10px; line-height: 1.5; text-align:center; margin: 0px 0px; font-size:22px; background-color:#4a4a4a; background-image: linear-gradient(#2e2e2e,#4a4a4a);">
+			Group Assignnent
+		</p>
+
+		<div id="mymain">
+
+			<div>Chin Yi Fan 28</div>
+			<div>Kong Yen Wen 30</div>
+			<div>Law You Wei 31</div>
+			<div>Ng Chun An 36</div>
+
+		</div>
+
+		<div class="copyright">
+			@ Copyright own by : Me , I guess (•̀ᴗ• )
+		</div>
+	</details>
+
+</div>
+
+<!-- Navigation Bar -->
+<nav id="nav">
+  <div class="nav_content">
+    <div class="logo">
+      <a href="../Landing Page/Landing Page.html"><img src="../Landing Page/Image/icon.png" height="50%"></a>
+    </div>
+    <ul class="nav_links">
+      <li><a href="../Landing Page/Landing Page.html">Home</a></li>
+      <li><a href="../2.0 Version Map.html">Map</a></li>
+      <li><a href="">Countries</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script src="script.js"></script>
+
+</body>
 </html>

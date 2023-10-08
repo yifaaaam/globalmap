@@ -1,4 +1,0 @@
-面对的问题：
-nav bar——
-perspective的元素里面无法添加fixed，添加到外面又无法获得nav bar的动画效果。要利用JavaScript完成。
-（将需要利用transform实现滚动视差的元素与其他元素隔开）
