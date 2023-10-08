@@ -178,6 +178,7 @@ nav{
   padding: 20px;
   z-index: 3;
   transition: 0.5s ease;
+  height: 86px
 }
 nav.sticky{
   background: #ffa600;
@@ -190,9 +191,26 @@ nav .nav_content{
   justify-content: space-between;
   align-items: center;
 }
-nav .nav_content .logo a{
-  height: 100px;
+nav .nav_content .logo{
+  border-radius: 20px;
 }
+nav .nav_content .logo a img{
+  height: 80px;
+}
+nav .nav_content .logo:hover{
+  background: #35363a;
+  border-radius: 10px;
+  transition:0.5s ease;
+} 
+nav .nav_content .logo:active{
+  background: #35363a;
+  border-radius: 10px;
+  transition:0.1s ease;
+} 
+nav .nav_content .logo:active img{
+  transition:0.1s ease;
+  height: 40px;
+} 
 nav .nav_content .nav_links{
   display: flex;
   align-items: center;
