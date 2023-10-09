@@ -230,13 +230,8 @@ nav .nav_links a{
   margin: auto;
 }
 nav .nav_links a:hover{
-<<<<<<< HEAD
-  color: black;
-  background: #ffa600;
-=======
   color: white;
-  background: #fffa20;
->>>>>>> 2d13ab56ecb30eb865ab0c1b5a92701c6bf08c4b
+  background: #ffbd42;
   border-radius: 10px;
   font-size: 20px;
 } 
