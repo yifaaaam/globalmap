@@ -229,7 +229,7 @@ nav .nav_links a{
 }
 nav .nav_links a:hover{
   color: white;
-  background: #ffbd4244;
+  background: #ffbd4288;
   border-radius: 10px;
   font-size: 20px;
 } 
@@ -262,7 +262,7 @@ nav .nav_links a:active{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffbd4244;
+  background-color: #ffbd4288;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -280,13 +280,13 @@ nav .nav_links a:active{
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #ffbd4244;
+  background-color: #ffbd4288;
   color: white;
 }
 
 /* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ffbd4244;
+  background-color: #ffbd4288;
   color: white;
 }
 
