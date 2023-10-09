@@ -93,13 +93,29 @@
 </div>
 
 <!-- Navigation Bar -->
-<div id="navbar-placeholder"></div>
-<script>
-    fetch('bar_test.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-        });
-</script>
+<nav id="nav">
+  <div class="nav_content">
+    <div class="logo">
+      <a href="../Landing Page/Landing Page.html"><img src="../Landing Page/Image/icon.png"></a>
+    </div>
+    <ul class="nav_links">
+      <li><a href="../Landing Page/Landing Page.html">Home</a></li>
+      <li><a href="../2.0 Version Map.html">Map</a></li>
+      <li>
+        <div class="dropdown">
+        <button class="dropbtn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/Countries/Malaysia.html">Malaysia</a>
+          <a href="/Countries/Russia.html">Russia</a>
+          <a href="/Countries/UK.html">UK</a>
+        </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<script src="script.js"></script>
 </body>
 </html>
