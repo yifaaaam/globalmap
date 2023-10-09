@@ -198,12 +198,12 @@ nav .nav_content .logo a img{
   height: 80px;
 }
 nav .nav_content .logo:hover{
-  background: #fffa20;
+  background: #ffa600;
   border-radius: 10px;
   transition:0.5s ease;
 } 
 nav .nav_content .logo:active{
-  background: #fffa20;
+  background: #ffa600;
   border-radius: 10px;
   transition:0.1s ease;
 } 
@@ -230,8 +230,13 @@ nav .nav_links a{
   margin: auto;
 }
 nav .nav_links a:hover{
+<<<<<<< HEAD
+  color: black;
+  background: #ffa600;
+=======
   color: white;
   background: #fffa20;
+>>>>>>> 2d13ab56ecb30eb865ab0c1b5a92701c6bf08c4b
   border-radius: 10px;
   font-size: 20px;
 } 
