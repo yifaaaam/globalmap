@@ -264,10 +264,6 @@ nav .nav_links a:active{
   background: #ffbd4288;
   border-radius: 10px;
   font-size: 20px;
-} 
-.dropdown .dropbtn:active{
-  transition:0.1s ease;
-  font-size: 10px;
 }
 
 /* Style the dropdown content (hidden by default) */
