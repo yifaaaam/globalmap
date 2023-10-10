@@ -2,7 +2,8 @@ const allzone = document.getElementById('allzone');
 const currentTime = document.getElementById('currentTime');
 let intervalId = null; // Variable to store the interval ID
 
-currentTime.innerText = new Date().toLocaleString('en-uk', { timeStyle: 'full' });
+// Initialize the current time
+updateTime();
 
 fetch('worldclock.json')
   .then(res => res.json())
@@ -23,4 +24,11 @@ allzone.oninput = () => {
 function time() {
   const ctime = new Date().toLocaleString('en-uk', { timezone: allzone.value, timeStyle: 'full' })
   currentTime.innerText = ctime
+}
+
+// Function to initialize and update the current time
+function updateTime() {
+  const ctime = new Date().toLocaleString('en-uk', { timeStyle: 'full' });
+  currentTime.innerText = ctime;
+  intervalId = setInterval(() => time(), 1000); // Start updating immediately
 }
