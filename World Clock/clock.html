@@ -4,7 +4,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navstyle.css">
     <script src="main.js" defer></script>
+
+    <style>
+        details {
+        user-select: none;
+        color: white;
+        background-color: #09090b;
+    }
+	
+	details>summary span.icon {
+		width: 24px;
+		height: 24px;
+		transition: all 0.4s;
+		margin-left:2px;
+		margin-right:2px;
+		margin-top:2px;
+		margin-bottom:0px;
+		color:white;
+		padding-left: 5px;
+	}
+
+	details[open] summary span.icon {
+		transform: rotate(180deg);
+	}
+
+	summary {
+		display: flex;
+		cursor: pointer;
+		background-color: #2e2e2e;
+		margin: 0px 46.7%;
+		border-radius: 5px 5px 0px 0px;
+	}
+
+	#mymain {
+		height: 28px;
+		display: flex;
+	}
+
+	#mymain div {
+		width:100%;
+		text-align:center;
+		font-size: 20px;
+		background-color: #4a4a4a;
+	}
+    .copyright{
+		text-align:center;
+		font-size: 15px;
+		width:100%;
+		background-color: #4a4a4a;
+		background-image: linear-gradient(#4a4a4a,#575757);
+		height: 30px;
+		padding-top:5px;
+	}
+    </style>
 </head> 
 <body>
     <header>
@@ -14,5 +68,55 @@
     <div class="worldclock">
         <h2 id="currentTime"></h2>
     </div>
+    <nav id="nav">
+        <div class="nav_content">
+          <div class="logo">
+            <a href="../Landing Page/Landing Page.html"><img src="../Landing Page/Image/icon.png"></a>
+          </div>
+          <ul class="nav_links">
+            <li><a href="../Landing Page/Landing Page.html">Home</a></li>
+            <li><a href="../2.0 Version Map.html">Map</a></li>
+            <li>
+              <div class="dropdown">
+              <button class="dropbtn">Country Info
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="../Countries/Malaysia.html">Malaysia</a>
+                <a href="../Countries/Russia.html">Russia</a>
+                <a href="../Countries/UK.html">UK</a>
+              </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <script src="Countries/script.js"></script>
+
+    <details>
+		<summary>
+			<div style="font-size:18px; margin-left:8px ; ">
+				Credits
+			</div>
+			<span class="icon"> &darr;</span>
+		</summary>
+
+		<p style="padding: 0px 10px 0px 10px; line-height: 1.5; text-align:center; margin: 0px 0px; font-size:22px; background-color:#4a4a4a; background-image: linear-gradient(#2e2e2e,#4a4a4a);">
+			Group Assignnent
+		</p>
+
+		<div id="mymain">
+
+			<div>Chin Yi Fan 28</div>
+			<div>Kong Yen Wen 30</div>
+			<div>Law You Wei 31</div>
+			<div>Ng Chun An 36</div>
+
+		</div>
+
+		<div class="copyright">
+			@ Copyright own by : Me , I guess (•̀ᴗ• )
+		</div>
+	</details>
 </body>
 </html>
