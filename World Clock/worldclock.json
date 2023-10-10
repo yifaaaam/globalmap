@@ -1,5 +1,11 @@
 [
   {
+    "iso": "MY",
+    "name": "Malaysia",
+    "timezone": "Asia/Kuala_Lumpur",
+    "utc": "UTC +06:55"
+  },
+  {
     "iso": "AF",
     "name": "Afghanistan",
     "timezone": "Asia/Kabul",
@@ -1360,12 +1366,6 @@
     "name": "Malawi",
     "timezone": "Africa/Blantyre",
     "utc": "UTC +02:10"
-  },
-  {
-    "iso": "MY",
-    "name": "Malaysia",
-    "timezone": "Asia/Kuala_Lumpur",
-    "utc": "UTC +06:55"
   },
   {
     "iso": "MY",
