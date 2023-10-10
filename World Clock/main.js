@@ -1,15 +1,15 @@
 const allzone = document.getElementById('allzone');
 const currentTime = document.getElementById('currentTime');
-let intervalId = null; // Variable to store the interval ID
+let intervalId = null;
 
 currentTime.innerText = new Date().toLocaleString('en-uk', { timeStyle: 'full' });
 
-let timezonesData = []; // Store the timezone data from worldclock.json
+let timezonesData = [];
 
 fetch('worldclock.json')
   .then(res => res.json())
   .then(data => {
-    timezonesData = data; // Store the data in the global variable
+    timezonesData = data;
     populateTimezoneDropdown(); // Populate the dropdown initially
   })
   .catch(err => console.log(err));
@@ -27,7 +27,6 @@ function time() {
   currentTime.innerText = ctime;
 }
 
-// Function to populate the dropdown with timezones
 function populateTimezoneDropdown() {
   allzone.innerHTML = ''; // Clear the dropdown
 
@@ -38,12 +37,21 @@ function populateTimezoneDropdown() {
   });
 }
 
-// Add event listener for the search input
 const timezoneSearch = document.getElementById('timezoneSearch');
 timezoneSearch.addEventListener('input', () => {
+  searchTimezones();
+});
+
+timezoneSearch.addEventListener('keyup', (event) => {
+  if (event.key === 'Enter') {
+    searchTimezones();
+  }
+});
+
+function searchTimezones() {
   const searchQuery = timezoneSearch.value.toLowerCase();
   const filteredTimezones = timezonesData.filter(timezone =>
     timezone.timezone.toLowerCase().includes(searchQuery)
   );
   populateTimezoneDropdown(filteredTimezones);
-});
+}
