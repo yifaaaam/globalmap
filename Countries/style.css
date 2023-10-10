@@ -219,7 +219,6 @@ nav .nav_links li{
 }
 nav .nav_links a{
   font-size: 18px;
-  font-weight: 500;
   color: #ffffff;
   padding: 10px 15px;
   transition: all 0.3s ease-out;
@@ -248,7 +247,7 @@ nav .nav_links a:active{
 
 /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 18px;
   border: none;
   outline: none;
   color: white;
