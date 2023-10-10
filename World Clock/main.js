@@ -28,7 +28,9 @@ function time() {
 
 // Function to initialize and update the current time
 function updateTime() {
-  const ctime = new Date().toLocaleString('en-uk', { timeStyle: 'full' });
+  const ctime = new Date().toLocaleString('en-uk', { timeZone: allzone.value, timeStyle: 'full' });
   currentTime.innerText = ctime;
   intervalId = setInterval(() => time(), 1000); // Start updating immediately
 }
+
+updateTime();
