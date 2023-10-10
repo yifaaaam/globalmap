@@ -7,6 +7,17 @@
     <script src="main.js" defer></script>
 
     <style>
+    *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#shell{/*整个框架*/
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 3px;
+}
     .title{/*大标题*/
   font-size: 100px;
   background-color: #35363a;
@@ -269,7 +280,8 @@ nav .nav_links a:active{
     </style>
 </head>
 
-<body bgcolor="black">
+<body bgcolor="black" style="color: white">
+    <div class="shell">
     <h>
         A World Clock
     </h>
@@ -310,7 +322,7 @@ nav .nav_links a:active{
 			@ Copyright own by : Me , I guess (•̀ᴗ• )
 		</div>
 	</details>
-
+    </div>
     <nav id="nav">
         <div class="nav_content">
           <div class="logo">
