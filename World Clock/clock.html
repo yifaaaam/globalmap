@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Clock</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="../navstyle.css">
     <script src="main.js" defer></script>
 
     <style>
@@ -38,12 +38,12 @@
 		border-radius: 5px 5px 0px 0px;
 	}
 
-	#mymain {
+	.mymain {
 		height: 28px;
 		display: flex;
 	}
 
-	#mymain div {
+	.mymain div {
 		width:100%;
 		text-align:center;
 		font-size: 20px;
@@ -59,7 +59,8 @@
 		padding-top:5px;
 	}
     </style>
-</head> 
+</head>
+
 <body>
     <div class="myheader">
         <select id="allzone">
@@ -81,7 +82,7 @@
 			Group Assignnent
 		</p>
 
-		<div id="mymain">
+		<div class="mymain">
 
 			<div>Chin Yi Fan 28</div>
 			<div>Kong Yen Wen 30</div>
@@ -118,6 +119,6 @@
           </ul>
         </div>
       </nav>
-    <script src="Countries/script.js"></script>
+    <script src="../Countries/script.js"></script>
 </body>
 </html>
