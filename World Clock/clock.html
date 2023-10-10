@@ -7,7 +7,50 @@
     <script src="main.js" defer></script>
 
 <style>
-        details {
+    .text{/*标题 & 内容*/
+  background-color: #4e4e4e;
+  padding-top: 20px;
+  padding-bottom: 40px;
+} 
+.text h1{/*标题用tag h1*/
+  color: #fdfdfd;
+  font-size: 60px;
+  margin-inline:50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  height: 120px;
+  /*for sticky*/
+  position: sticky;
+  top: 86px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color:  #3b3a38;
+  transition: 0.5s ease;
+}
+.text h1:hover{
+  color: #ffc400;
+  background: #6b6764;
+  border-radius: 10px;
+} 
+.text h1:active{
+  color: #ffffff;
+  font-size: 50px;
+  border-radius: 10px;
+  transition: 0.1s ease;
+} 
+.text h2{/*副标题用tag b*/
+  color: #fff1a4;
+  font-size: 30px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.text p{/*内容用tag p*/
+  color: #dadada;
+  margin: 0px 80px;
+  font-size: 20px;
+}
+
+    details {
         user-select: none;
         color: white;
         background-color: #09090b;
@@ -68,13 +111,13 @@
         When you are travelling, you might be aware of an essential issue - time zone. It is important for you to handle the time between two locations, so you can plan for everything.
         This page provides you a tool to browse a time zone and look at its local time.
     </p>
-    <div class="myheader">
+    <header>
         <select id="allzone">
         </select>
         <div class="worldclock">
             <h2 id="currentTime"></h2>
         </div>
-    </div>
+    </header>
 
     <details>
 		<summary>
